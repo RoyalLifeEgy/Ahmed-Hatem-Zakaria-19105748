@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:background="#FFFEE0"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/activity_background"
+        android:backgroundTint="#FFFDAF"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".MainActivity2">
+
+        <TextView
+            android:id="@+id/table_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Total system resources are :"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table_header"
+            android:scrollbars="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_border"
+                    android:padding="16dp" />
+
+            </HorizontalScrollView>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/table_header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Available system resources are :"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table_header"
+            android:scrollbars="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_border"
+                    android:padding="16dp" />
+            </HorizontalScrollView>
+        </ScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="currently allocated resources :"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table_header"
+            android:scrollbars="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tableLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_border"
+                    android:padding="16dp" />
+
+            </HorizontalScrollView>
+        </ScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="maximum resources :"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table_header"
+            android:scrollbars="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tableLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_border"
+                    android:padding="16dp" />
+
+            </HorizontalScrollView>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/my_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Evaluate" />
+
+
+        <TextView
+            android:id="@+id/Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="200px"
+            android:width="1000px"
+            android:background="#32CD32"
+            android:text="Not Set"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="#fff"
+            android:textSize="150px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+</ScrollView>

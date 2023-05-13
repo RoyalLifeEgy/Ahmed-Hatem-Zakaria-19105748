@@ -1,0 +1,23 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FDFDFD"
+                android:endColor="#E9F7F8"
+                android:type="linear"
+                android:angle="270" />
+            <stroke
+                android:width="1dp"
+                android:color="#D2F3F5" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <!-- Top bar with return and home buttons -->
+    <item android:gravity="top">
+        <shape android:shape="rectangle">
+            <solid android:color="#FDFDFD" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</layer-list>
